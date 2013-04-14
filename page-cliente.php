@@ -1,0 +1,1 @@
+<?php var_dump(the_post()); ?>
