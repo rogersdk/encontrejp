@@ -1,8 +1,196 @@
 /*
-Theme Name: Encontrejp v. 1.1
-Theme URI: http://www.aindavaidefinir.com.br/
-Description: Tema desenvolvido por Rogerio Nobrega baseado no template Mighty
-Author: Rogerio Nobrega
-Author URI: http://www.naotem.com.br
+Theme Name: EncontreJP
+Theme URI: http://www.encontrejp.com.br
+Description: Tema desenvolvido para o EncontreJP
+Author: José Francisco
+Author URI: http://dudemelo.com
 Version: 1.0
 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+*:focus {
+    outline: none;
+}
+
+body {
+    font: 14px Arial,Helvetica,Sans-serif;
+    color: #666;
+    text-align: center;
+}
+
+
+/** headlines **/
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+h1 {
+    font: 250% 'Days One',Arial,Helvetica,Sans-serif;
+}
+h2, h3 {
+    font: normal 100% 'Advent Pro',Arial,Helvetica,Sans-serif;
+    margin-bottom: 1em;
+}
+h2 {
+    font-size: 250%;
+}
+h1 span, h2 span, h3 span, h4 span {
+    color: #e33;
+}
+
+
+/** links **/
+
+a {
+    color: #e33;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+/** forms **/
+
+input[type=text], input[type=search], textarea {
+    border: 1px solid #ccc;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    font-size: 120%;
+    padding: 0.5em;
+}
+input[type=text]:focus, input[type=search]:focus, textarea:focus {
+    border-color: #e33;
+    -webkit-box-shadow: 0 0 0.5em #e33;
+    -moz-box-shadow: 0 0 0.5em #e33;
+    box-shadow: 0 0 0.5em #e33;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s ;
+    -ms-transition: 0.3s ;
+    -o-transition: 0.3s ;
+    transition: 0.3s ;
+}
+input[type=search] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+/** navigations **/
+
+.navbar ul {
+    list-style: none;
+    overflow: hidden;
+}
+.navbar li, .navbar a {
+    color: #666;
+    display: block;
+}
+.navbar a {
+    padding: 0.5em;
+}
+.navbar a:hover {
+    text-decoration: none;
+}
+.navbar.horizontal li {
+    float: left;
+}
+
+
+/** containers **/
+
+.container {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: left;
+    width: 980px;
+}
+
+
+/** header **/
+
+#header .container {
+    padding: 2em;
+}
+#header h1 {
+    float: left;
+    margin-right: 2em;
+}
+#header h1 a {
+    color: #666;
+}
+#header h1 a:hover {
+    text-decoration: none;
+}
+#header .navbar {
+    float: left;
+}
+#header form {
+    float: right;
+}
+#header form input[type=search] {
+    font-size: 140%;
+    width: 380px;
+}
+
+
+/** main navigation **/
+
+#nav-main {
+    background: #e33;
+}
+#nav-main a {
+    color: #fff;
+    font-size: 120%;
+    padding: 1em;
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    -ms-transition: background 0.3s;
+    -o-transition: background 0.3s;
+    transition: background 0.3s;
+}
+#nav-main li a:hover {
+    background: #d22;
+}
+#nav-main li.active a {
+    background: #c11;
+}
+
+
+/** highlights **/
+
+#highlights {
+    background: #333;
+    height: 330px;
+    position: relative;
+}
+#highlights a {
+    color: #fff;
+    font-size: 200%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 40%;
+}
+
+
+/** maim content **/
+
+#main {
+    padding: 2em 0;
+}
+
+
+/** footer **/
+
+#footer {
+    border-top: 1px solid #ccc;
+    line-height: 2em;
+    padding: 2em 0;
+}
